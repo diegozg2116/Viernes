@@ -1,24 +1,15 @@
 
 const allPhrases = [
-  "Yo sé que te he dicho mil veces",
-  "Que tú pones buena suerte en mi viernes 13",
-  "Que tengo tu nombre tatuado en mi piel",
-  "Que ya te extraño, aunque te haya visto ayer",
-  "Sostente fuerte, yo siento lo mismo que tú sientes",
-  "Miradas que no mienten, sonrisas que muestran dientes",
-  "Contigo todo es más que suficiente",
-  "Contigo todo es más que suficiente",
-  "No ocupo de alguien más, solo a ti presente",
-  "Y me llevas lentamente a imaginar",
-  "A una vida donde tú puedas estar",
-  "Y me llevas lentamente a imaginar",
-  "A una vida donde te pueda cuidar",
-  "Porque si no es contigo, no es con nadie más",
-  "Es algo que tú nunca, nunca entenderás",
-  "Con alguien más, yo no me puedo conformar",
-  "Nadie te verá como yo te voy a ver",
-  "Tú tienes todo lo que busco",
-  "Tienes algo en particular, algo que te hace más"
+  "Que acaricia tu piel",
+  "Solo quiero conversar",
+  "Solo quiero conocerte",
+  "Dame un poco de tu tiempo para convencerte",
+  "Yo solo quiero ser tu amigo",
+  "Y me muero por salir contigo",
+  "Dame una señal",
+  "Solo dame una mirada",
+  "Si estás a mi lado, a mí no me importa nada",
+  "Ya quiero estar entre tus brazos"
 ];
 
 let remainingPhrases = [...allPhrases];
