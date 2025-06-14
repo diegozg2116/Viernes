@@ -22,7 +22,6 @@ const allPhrases = [
 ];
 
 let remainingPhrases = [...allPhrases];
-
 const loveBtn = document.getElementById("loveBtn");
 const loveSong = document.getElementById("loveSong");
 
@@ -41,22 +40,25 @@ loveBtn.addEventListener("click", () => {
   const phrase = document.createElement("div");
   phrase.classList.add("phrase-bubble");
   phrase.textContent = phraseText;
+  phrase.style.position = "absolute";
+  phrase.style.visibility = "hidden";
 
-  const x = Math.random() * (window.innerWidth - 200);
+  document.body.appendChild(phrase);
+
+  const phraseWidth = phrase.offsetWidth;
+  const x = Math.random() * (window.innerWidth - phraseWidth);
   const y = window.innerHeight - 100;
 
   phrase.style.left = `${x}px`;
   phrase.style.top = `${y}px`;
+  phrase.style.visibility = "visible";
 
-  document.body.appendChild(phrase);
-
-  setTimeout(() => {
+    setTimeout(() => {
     phrase.remove();
-  }, 5000);
+  }, 10000); // 10 segundos
 });
 
-// ----- Canvas y Fuegos Artificiales -----
-
+// Fuegos artificiales
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -165,6 +167,5 @@ setInterval(() => {
 }, 700);
 
 animate();
-
 
 
